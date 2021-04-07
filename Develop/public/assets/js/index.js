@@ -1,3 +1,11 @@
+// Dependencies
+const express = require("express");
+
+// Sets up the Express App
+const app = express();
+const PORT = 3000;
+
+
 let noteTitle;
 let noteText;
 let saveNoteBtn;
@@ -178,3 +186,6 @@ if (window.location.pathname === '/notes') {
 }
 
 getAndRenderNotes();
+
+// Starts the server to begin listening
+app.listen(PORT, () => console.log(`App listening on PORT ${PORT}`));
