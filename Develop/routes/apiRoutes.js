@@ -22,7 +22,6 @@ module.exports = (app) => {
         res.json(notesData);
       }
     );
-    res.json(true);
   });
 };
 //uuid package install with v4 add id note before line16
